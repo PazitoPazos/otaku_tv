@@ -1,0 +1,75 @@
+.user-actions {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  height: 100%;
+}
+
+.user-action-item {
+  width: 4rem;
+
+  &:not(:last-child):hover {
+    cursor: pointer;
+    background-color: rgba(48, 48, 48, 1);
+  }
+}
+
+.user-action-item:not(:last-child),
+.profile-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover .search-button,
+  &:hover .premium-button {
+    stroke: rgba(240, 240, 240, 1);
+  }
+
+  &:hover .profile-button img {
+    border-color: rgba(240, 240, 240, 1);
+  }
+}
+
+.premium-button {
+  fill: rgba(64, 64, 64, 1);
+}
+
+.search-button,
+.premium-button {
+  stroke: rgba(248, 64, 64, 0.8);
+  stroke-width: .15rem;
+  height: 1.8rem;
+  width: 1.8rem;
+  transition: stroke .3s;
+}
+
+.profile-button {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+
+  &:hover {
+    background-color: rgba(48, 48, 48, 1);
+
+    & img {
+      border-color: rgba(240, 240, 240, 1);
+    }
+  }
+
+  & img {
+    border: 3px solid rgba(248, 64, 64, 0.8);
+    border-radius: 100%;
+    object-fit: cover;
+    height: 2.4rem;
+    width: 2.4rem;
+    transition: border-color .3s;
+  }
+
+  &.is-active {
+    background-color: rgba(48, 48, 48, 1);
+
+    & img {
+      border-color: rgba(240, 240, 240, 1);
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  align-items: center;
+  background-color: rgba(64, 64, 64, 0.8);
+  height: 4rem;
+  width: 100vw;
+  z-index: 100;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  &:hover {
+    background-color: rgba(48, 48, 48, 1);
+  }
+
+  & .header-logo-link {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: .6rem;
+    padding: 0 .6rem;
+    height: 100%;
+    width: 100%;
+
+    & img {
+      height: 2rem;
+    }
+  }
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  order: -1;
+  height: 100%;
+  width: 4rem;
+}
+
+.state-visible-on-mobile {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.header-right {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  height: 100%;
+}
