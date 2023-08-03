@@ -1,9 +1,10 @@
 import { Bell, Bookmark, History, Logout, User } from '../Icons/Icons'
+import UserMenuItem from '../UserMenuItem/UserMenuItem'
 import './UserMenu.css'
 
-function UserMenu () {
+function UserMenu ({ showUserMenu = false }) {
   return (
-    <div className='user-menu'>
+    <div className={'user-menu' + (showUserMenu ? ' is-open' : '')}>
       <div className='user-menu-content'>
         <div className='user-menu-section user-menu-account-section'>
           <div className='user-menu-account-item'>
@@ -16,40 +17,35 @@ function UserMenu () {
           </div>
         </div>
         <div className='user-menu-section'>
-          <a className='user-menu-item' href="/watchlist">
-            <Bookmark />
-            <div>
-              <h5>Mi Lista</h5>
-            </div>
-          </a>
-          <a className='user-menu-item' href="/history">
-            <History />
-            <div>
-              <h5>Historial</h5>
-            </div>
-          </a>
+          <UserMenuItem
+            href={'/watchlist'}
+            icon={<Bookmark />}
+            label={'Mi Lista'}
+          />
+          <UserMenuItem
+            href={'/history'}
+            icon={<History />}
+            label={'Historial'}
+          />
         </div>
         <div className='user-menu-section'>
-          <a className='user-menu-item' href="/notifications">
-            <Bell />
-            <div>
-              <h5>Notificaciones</h5>
-            </div>
-          </a>
-          <a className='user-menu-item' href="/account">
-            <User/>
-            <div>
-              <h5>Mi Cuenta</h5>
-            </div>
-          </a>
+          <UserMenuItem
+            href={'/notifications'}
+            icon={<Bell />}
+            label={'Notificaciones'}
+          />
+          <UserMenuItem
+            href={'/account'}
+            icon={<User />}
+            label={'Mi Cuenta'}
+          />
         </div>
         <div className='user-menu-section'>
-          <a className='user-menu-item' href="/logout">
-            <Logout />
-            <div>
-              <h5>Desconectar</h5>
-            </div>
-          </a>
+          <UserMenuItem
+            href={'/logout'}
+            icon={<Logout />}
+            label={'Desconectar'}
+          />
         </div>
       </div>
     </div>

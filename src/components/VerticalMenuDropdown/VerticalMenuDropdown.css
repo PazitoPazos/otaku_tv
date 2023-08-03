@@ -5,15 +5,6 @@
   height: 100%;
   width: 100%;
 
-  &:hover {
-    cursor: pointer;
-    background-color: rgba(48, 48, 48, 1);
-
-    & .line {
-      background-color: rgba(240, 240, 240, 1);
-    }
-  }
-
   &.is-active {
     background-color: rgba(48, 48, 48, 1);
 
@@ -100,4 +91,15 @@
   font-size: 1rem;
   font-weight: 600;
   padding: 0rem .8rem .4rem .8rem;
+}
+
+@media (hover: hover) {
+  .menu-button-wrapper:hover {
+    background-color: rgba(48, 48, 48, 1);
+    cursor: pointer;
+
+    & .line {
+      background-color: rgba(240, 240, 240, 1);
+    }
+  }
 }

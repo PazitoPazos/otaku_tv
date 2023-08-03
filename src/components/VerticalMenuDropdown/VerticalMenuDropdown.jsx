@@ -1,16 +1,23 @@
+import { React, useState } from 'react'
 import './VerticalMenuDropdown.css'
 
 function VerticalMenuDropdown () {
+  const [showDropdown, setShowDropdown] = useState(false)
+
+  const toggleDropdown = () => {
+    setShowDropdown(!showDropdown)
+  }
+
   return (
     <>
-      <div role='button' className='menu-button-wrapper'>
+      <div role='button' className={'menu-button-wrapper' + (showDropdown ? ' is-active' : '')} onClick={toggleDropdown}>
         <div className='menu-button'>
           <span className='line' />
           <span className='line' />
           <span className='line' />
         </div>
       </div>
-      <div className='vertical-menu-dropdown'>
+      <div className={'vertical-menu-dropdown' + (showDropdown ? ' is-open' : '')}>
         <div className='menu-dropdown-content'>
           <nav>
             <div className='menu-section'>
