@@ -31,3 +31,30 @@ enum MediaSeason {
   SUMMER
   FALL
 }
+
+query PopularAnimes($page: Int, $perPage: Int = 10) {
+  Page(page: $page, perPage: $perPage) {
+    # pageInfo {
+    #   total
+    #   currentPage
+    #   lastPage
+    #   hasNextPage
+    #   perPage
+    # }
+    media(sort: POPULARITY_DESC) {
+      id
+      title {
+        romaji
+      }
+      bannerImage
+      coverImage {
+        extraLarge
+        large
+        medium
+        color
+      }
+      # popularity
+      # trending
+    }
+  }
+}

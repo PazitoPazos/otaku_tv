@@ -1,40 +1,26 @@
 .carousel {
-  display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  display: flex;
+  gap: 1rem;
   height: 100%;
-  transition: background-color .5s ease-in-out;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
   width: calc(100vw - 1.6rem);
 }
 
-.carousel-buttons {
-  align-items: center;
-  color: rgba(64, 64, 64, 0.8);
-  display: flex;
-  height: 100%;
-  transition: background-color .4s ease-in-out;
+.carousel-item {
+  scroll-snap-align: start;
 
-  &:active {
-    background-color: rgba(64, 64, 64, 0.4);
-  }
-
-  &.right {
-    transform: rotate(180deg);
+  & img {
+    height: 20rem;
   }
 }
 
-.image-container {
-  align-items: center;
-  display: flex;
-  max-width: 100%;
-  max-height: 100%;
-  overflow: hidden;
-  padding: 3rem 2rem;
-}
+.carousel-item-info {
 
-.image-container img {
-  height: auto;
-  object-fit: cover;
-  width: 100%;
+  & h3 {
+    font-size: 1rem;
+    margin: 0 0 .6rem;
+  }
 }
