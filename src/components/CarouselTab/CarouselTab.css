@@ -1,0 +1,46 @@
+.hero-carousel-tab-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-carousel-tab {
+  border: none;
+  border-radius: .25rem;
+  margin: 1rem 0;
+  padding: 0;
+  transition: all .3s ease-in-out;
+}
+
+.hero-carousel-tab-indicator {
+  background-color: white;
+  border-radius: 1rem 1rem 0 0;
+  height: 0.25rem;
+  width: 100%;
+
+  &::before {
+    animation: loadCarouselTabIndicator 8s linear forwards;
+    background-color: rgba(248, 64, 64, 0.8);
+    border-radius: 1rem 1rem 0 0;
+    content: "";
+    display: block;
+    height: 100%;
+    transform: scaleX(0);
+    transform-origin: left center;
+    width: 100%;
+  }
+}
+
+.hero-carousel-tab-text {
+  display: flex;
+  margin: .4rem;
+}
+
+@keyframes loadCarouselTabIndicator {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}

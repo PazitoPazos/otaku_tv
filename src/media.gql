@@ -1,0 +1,33 @@
+query NewsAnimes($page: Int, $perPage: Int, $season: MediaSeason, $seasonYear: Int) {
+  Page(page: $page, perPage: $perPage) {
+    # pageInfo {
+    #   total
+    #   currentPage
+    #   lastPage
+    #   hasNextPage
+    #   perPage
+    # }
+    media(season: $season, seasonYear: $seasonYear, sort: POPULARITY_DESC) {
+      id
+      title {
+        romaji
+      }
+      bannerImage
+      coverImage {
+        extraLarge
+        large
+        medium
+        color
+      }
+      # popularity
+      # trending
+    }
+  }
+}
+
+enum MediaSeason {
+  WINTER
+  SPRING
+  SUMMER
+  FALL
+}

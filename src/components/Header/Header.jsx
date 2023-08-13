@@ -4,7 +4,7 @@ import './Header.css'
 
 function Header () {
   return (
-    <div className='header'>
+    <header className='header'>
       <div className='header-logo'>
         <a className='header-logo-link' href="/">
           <img src="../logo.png" alt="Otaku TV logo" />
@@ -18,7 +18,7 @@ function Header () {
       <div className='header-right'>
         <UserActions />
       </div>
-    </div>
+    </header>
   )
 }
 

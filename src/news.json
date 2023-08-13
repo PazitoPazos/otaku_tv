@@ -1,0 +1,73 @@
+{
+  "data": {
+    "Page": {
+      "media": [
+        {
+          "id": 145064,
+          "title": {
+            "romaji": "Jujutsu Kaisen 2nd Season"
+          },
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/145064-kH9vbOEitIhl.jpg",
+          "coverImage": {
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx145064-5fa4ZBbW4dqA.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx145064-5fa4ZBbW4dqA.jpg",
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx145064-5fa4ZBbW4dqA.jpg",
+            "color": "#5d86e4"
+          }
+        },
+        {
+          "id": 146065,
+          "title": {
+            "romaji": "Mushoku Tensei II: Isekai Ittara Honki Dasu"
+          },
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/146065-33RDijfuxLLk.jpg",
+          "coverImage": {
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx146065-1hTpwsW2fQIA.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx146065-1hTpwsW2fQIA.jpg",
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx146065-1hTpwsW2fQIA.jpg",
+            "color": "#e4a143"
+          }
+        },
+        {
+          "id": 159831,
+          "title": {
+            "romaji": "Zom 100: Zombie ni Naru Made ni Shitai 100 no Koto"
+          },
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/159831-FWfdyqpxhLli.jpg",
+          "coverImage": {
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx159831-TxAC0ujoLTK6.png",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx159831-TxAC0ujoLTK6.png",
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx159831-TxAC0ujoLTK6.png",
+            "color": "#d6e428"
+          }
+        },
+        {
+          "id": 163132,
+          "title": {
+            "romaji": "Horimiya: piece"
+          },
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/163132-bxxTKGlmlnOm.jpg",
+          "coverImage": {
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx163132-C220CO5UrTxY.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx163132-C220CO5UrTxY.jpg",
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx163132-C220CO5UrTxY.jpg",
+            "color": "#e4a143"
+          }
+        },
+        {
+          "id": 159322,
+          "title": {
+            "romaji": "BLEACH: Sennen Kessen-hen - Ketsubetsu-tan"
+          },
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/159322-biJjvtNkhkxR.jpg",
+          "coverImage": {
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx159322-Sp1GflRhE6Po.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx159322-Sp1GflRhE6Po.jpg",
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx159322-Sp1GflRhE6Po.jpg",
+            "color": "#4386e4"
+          }
+        }
+      ]
+    }
+  }
+}
